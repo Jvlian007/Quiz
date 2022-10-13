@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public abstract class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     private Button trueButton;
     private Button falseButton;
     private Button nextButton;
@@ -46,7 +46,7 @@ public abstract class MainActivity extends AppCompatActivity {
                 setNextQuestion();
             }
         });
-
+        setNextQuestion();
     }
 
     private Question[] questions = new Question[] {
